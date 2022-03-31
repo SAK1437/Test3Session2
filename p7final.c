@@ -3,7 +3,7 @@
  
 int main()
 {
-  char str[] = "bbdbd jhsh ajj";
+  char str[] = "bbdbdDSDC jhsh ajj";
   char* token;
   char* rest = str;
   int n=0;
