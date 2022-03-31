@@ -1,21 +1,15 @@
-#include<stdio.h>
-struct _fraction
-{
-  int num,den;
-};
-typedef struct _fraction Fraction;
-  int gcd(int a,int b)
-  {
-    int t;
-    while (b != 0)
-      {
-        t = b;
-        b = a%b;
-        a = t;
-      }
-    return a;
-}
+#include <stdio.h>
+#include <string.h>
+ 
 int main()
 {
-  printf("%d\n",gcd(16,24));
+  char str[] = "bbdbd jhsh ajj";
+  char* token;
+  char* rest = str;
+  int n=0;
+  while ((token = strtok_r(rest, " ", &rest)))
+    n=n+1;
+    return 0;
+  printf("No.=%d",n);
+  return 0;
 }
